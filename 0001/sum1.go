@@ -11,19 +11,19 @@ import "fmt"
 链接：https://leetcode-cn.com/problems/two-sum
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
-func main(){
-	nums :=[]int{2,7,11,15}
-	fmt.Println(twoSums(nums,17))
+func main() {
+	nums := []int{2, 7, 11, 15}
+	fmt.Println(twoSums(nums, 17))
 }
 
-func twoSums(num []int,target int)[]int{
+func twoSums(num []int, target int) []int {
 	// 创建map 确保每个数字只能用一次
-	numMap :=make(map[int]int)
-	for i:=0;i<len(num);i++{
+	numMap := make(map[int]int)
+	for i := 0; i < len(num); i++ {
 		// 这里做减法
-		another := target-num[i]
-		if _,ok:=numMap[another];ok{
-			return []int{numMap[another],i}
+		another := target - num[i]
+		if _, ok := numMap[another]; ok {
+			return []int{numMap[another], i}
 		}
 		numMap[num[i]] = i
 	}

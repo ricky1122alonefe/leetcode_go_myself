@@ -5,10 +5,9 @@ import (
 	"math"
 )
 
-func main(){
+func main() {
 	fmt.Println(reverse(12))
 }
-
 
 func reverse(x int) int {
 	res := 0

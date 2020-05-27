@@ -4,9 +4,9 @@ import (
 	"fmt"
 )
 
-func main(){
-	a:=[]int{1,4,3,2,2}
-	fmt.Println(kidsWithCandies(a,3))
+func main() {
+	a := []int{1, 4, 3, 2, 2}
+	fmt.Println(kidsWithCandies(a, 3))
 }
 func kidsWithCandies(candies []int, extraCandies int) []bool {
 
@@ -41,9 +41,9 @@ func kidsWithCandies(candies []int, extraCandies int) []bool {
 	// 	}
 	// }
 
-	for i:=0;i<len(candies);i++{
+	for i := 0; i < len(candies); i++ {
 		// 当前 增加结果
-		current :=candies[i]+extraCandies
+		current := candies[i] + extraCandies
 
 	}
 	return result
